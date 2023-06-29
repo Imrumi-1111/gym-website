@@ -1,0 +1,78 @@
+.Classes {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.program_section {
+  display: flex;
+}
+.arrow {
+  margin: 2rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 5rem 5rem;
+}
+.program_container {
+  border: 1px solid;
+  display: flex;
+  width: 92%;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.image_container {
+  border: 1px solid;
+  display: flex;
+  padding: 1rem;
+  margin: 2rem 2rem;
+  width: 25rem;
+  height: 25rem;
+}
+.Classes p {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .Classes {
+        display: flex;
+        flex-direction: column;
+      }
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .program_section {
+        display: flex;
+        flex-direction: column;
+      }
+      .arrow {
+        display: none;
+        margin: 2rem 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+        padding: 5rem 5rem;
+      }
+      .program_container {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+      }
+      .image_container {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 2rem 2rem;
+        width: 25rem;
+        height: 25rem;
+      }
+      .Classes p {
+        display: flex;
+        justify-content: center;
+      }
+}

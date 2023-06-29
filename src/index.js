@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/section/about/about';
 import Training from './components/section/training/training';
 import Registration from './components/element/registration/registration';
+import Pricing from './components/section/pricing/pricing';
+import Program from './components/section/program/program';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<About />} />
-      <Route path="/program" element={<App />} />
-      <Route path="/pricing" element={<App />} />
+      <Route path="/program" element={<Program />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/training" element={<Training />} />
       <Route path="/registration" element={<Registration/>} />
     </Routes>
