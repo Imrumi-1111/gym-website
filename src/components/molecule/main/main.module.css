@@ -1,0 +1,28 @@
+.Main{
+    margin-top: 13rem;
+    border: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+}
+
+.btn{
+    margin: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 6.23rem;
+    background-color:  rgb(179, 61, 61);
+    height: fit-content;
+    opacity: 0.6;
+    font-size: medium;
+    border-radius: 8px;
+}
+.btn:hover{
+    opacity: 1;
+}
+.img{
+    margin-top: -23rem;
+    margin-left: 48rem;
+    width: 38rem;
+    height: 40rem;
+}

@@ -1,0 +1,24 @@
+.Footer{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background-color: rgb(162, 162, 185);
+    opacity: 0.9;
+    
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+.footer_right {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
