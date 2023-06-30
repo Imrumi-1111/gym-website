@@ -1,3 +1,12 @@
+# GYM Website
+# by Upasana Chakraborty
+# Deploy link :
+# Library used : React Js
+# Language : JavaScript
+# Npm used :  Build this project using Reactjs, Router-dom,MUI,React youtube,React wavify library.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
