@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     width: 45rem;
+    color: #61dafb;
+   
 }
 
 .btn{
@@ -11,7 +13,7 @@
     display: flex;
     flex-direction: column;
     width: 6.23rem;
-    background-color:  rgb(179, 61, 61);
+    background-color:  green;
     height: fit-content;
     opacity: 0.6;
     font-size: medium;
@@ -25,4 +27,7 @@
     margin-left: 48rem;
     width: 38rem;
     height: 40rem;
+    transform-origin: top;
+    transform: skew(-10deg);
+    z-index: 1;
 }

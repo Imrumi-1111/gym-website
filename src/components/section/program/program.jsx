@@ -1,9 +1,16 @@
 import { Fragment, useState } from "react";
 import styles from "./program.module.css";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
+import Footer from "../../atom/footer/footer";
 
 export default function Program() {
   const [scroll, setScroll] = useState(0);
+
+  const navigate = useNavigate();
+  function handleSeeWholeTeam() {
+    navigate("/training");
+  }
 
   function scrollLeft() {
     const container = document.getElementById("program_container");
@@ -91,6 +98,12 @@ export default function Program() {
             <MdOutlineArrowRight onClick={scrollRight} />
           </div>
         </div>
+        <button className={styles.btn} onClick={handleSeeWholeTeam}>
+          See whole team
+        </button>
+      </div>
+      <div className={styles.Footer}>
+        <Footer />
       </div>
     </Fragment>
   );

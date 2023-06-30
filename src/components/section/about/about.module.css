@@ -1,6 +1,7 @@
 .About {
   display: flex;
   flex-direction: column;
+  color: #61dafb;
 }
 .About_container {
   margin: 2rem 2rem;
@@ -26,6 +27,7 @@
   .About {
     display: flex;
     flex-direction: column;
+    color: #61dafb;
   }
   .About_container {
     display: flex;

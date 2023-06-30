@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import styles from "./pricing.module.css";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import Footer from "../../atom/footer/footer";
 
 export default function Pricing() {
   return (
@@ -34,22 +35,25 @@ export default function Pricing() {
               you in a long term contract, giving you greater flexibility.
             </p>
           </div>
-        
-        <div>
-          <h3>Each Plan Included</h3>
-          <p>{<HiArrowNarrowRight />} The best equipment global brands</p>
-          <p>
-            {<HiArrowNarrowRight />} The gym is open 24 hours a day. 7days a
-            week
-          </p>
-          <p>{<HiArrowNarrowRight />} Two safe payment methods</p>
-          <p>
-            {<HiArrowNarrowRight />} Group fitness classes in the price of the
-            subscriptions
-          </p>
-          <p>{<HiArrowNarrowRight />} No long-term contract period</p>
+
+          <div>
+            <h3>Each Plan Included</h3>
+            <p>{<HiArrowNarrowRight />} The best equipment global brands</p>
+            <p>
+              {<HiArrowNarrowRight />} The gym is open 24 hours a day. 7days a
+              week
+            </p>
+            <p>{<HiArrowNarrowRight />} Two safe payment methods</p>
+            <p>
+              {<HiArrowNarrowRight />} Group fitness classes in the price of the
+              subscriptions
+            </p>
+            <p>{<HiArrowNarrowRight />} No long-term contract period</p>
           </div>
         </div>
+      </div>
+      <div className={styles.Footer}>
+        <Footer />
       </div>
     </Fragment>
   );

@@ -13,7 +13,7 @@
 .btn {
   margin: 1rem 1rem;
   width: 5rem;
-  background-color: rgb(218, 36, 36);
+  background-color: green;
   height: fit-content;
   opacity: 0.6;
   font-size: medium;
@@ -25,6 +25,13 @@
 p {
   color: #a03b54;
 }
+.BiMenu{
+  display: none;
+}
+.menuList{
+  display: flex;
+  gap: 4rem;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -35,15 +42,17 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: fit-content;
     width: 100%;
-    justify-content: space-around;
     color: aliceblue;
+  }
+  .menuList{
+    display: flex;
+    flex-direction: column;
   }
   .btn {
     margin: 1rem 1rem;
     width: 5rem;
-    background-color: rgb(218, 36, 36);
+    background-color: green;
     height: fit-content;
     opacity: 0.6;
     font-size: medium;
@@ -54,5 +63,9 @@ p {
   }
   p {
     color: #a03b54;
+  
+  }
+  .BiMenu{
+    display: flex;
   }
 }

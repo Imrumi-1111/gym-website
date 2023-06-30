@@ -1,16 +1,13 @@
-
 .Fragment {
-  background-color: #800020;
   display: flex;
   justify-content: space-around;
   padding: 5rem 5rem;
-  color: rgb(64, 133, 129);
-  width: 100%;
+  color: #61dafb;
   height: 100%;
 }
 .Pricing_page1 {
   margin-top: 3rem;
-  background-color: rgb(12, 3, 3);
+  background-color: #800020;
   padding: 2rem 2rem;
   width: 12rem;
   height: 20rem;
@@ -39,4 +36,46 @@
   width: 11rem;
   padding: 0.2rem 0.2rem;
   background-color: rgb(160, 119, 31);
+}
+@media only screen and (max-width: 600px) {
+  .Fragment {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 5rem;
+    color: #61dafb;
+    flex-direction: column;
+    height: 100%;
+  }
+  .Pricing_page1 {
+    margin-top: 3rem;
+    background-color: #800020;
+    padding: 2rem 2rem;
+    width: 12rem;
+    height: 20rem;
+  }
+  .Pricing_page2 {
+    background-color: rgb(96, 90, 141);
+    padding: 2rem 2rem;
+    width: 12rem;
+  }
+  .Pricing_para {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 2rem 2rem;
+  }
+  .Fragment p {
+    display: flex;
+    gap: 0.3rem;
+    font-size: 12px;
+    color: wheat;
+  }
+  .btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 11rem;
+    padding: 0.2rem 0.2rem;
+    background-color: rgb(160, 119, 31);
+  }
 }

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./footer.module.css";
 import Icons from "../icons/icons";
+import Wave from "react-wavify";
 
 export default function Footer() {
   return (
@@ -15,13 +16,36 @@ export default function Footer() {
           <Icons />
         </div>
         <div className={styles.footer_right}>
+          <div className={styles.footer_right_p}>
           <h2>Healthy living</h2>
-          <p></p>
+          <p>We transform your life</p>
+          <p>We provide easy to maintain diet chart</p>
+          </div>
+          <div className={styles.footer_right_p}>
           <h2>Services</h2>
-          <p></p>
-          <h2>Programms</h2>
-          <p></p>
+          <p>24/7</p>
+          <p>7 days per week</p>
+          </div>
+          <div className={styles.footer_right_p}>
+          <h2>Programs</h2>
+          <p>Aerobics</p>
+          <p>Boxing</p>
+          <p>Pillate</p>
+          </div>
         </div>
+        
+      </div>
+      <div className={styles.Wave}>
+      <Wave
+      fill="rgb(162, 162, 185)"
+      paused={false}
+      options={{
+        height:60,
+        amplitude:80,
+        speed:0.16,
+        points:9
+      }}
+      />
       </div>
     </Fragment>
   );

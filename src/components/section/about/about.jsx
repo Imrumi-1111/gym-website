@@ -1,21 +1,17 @@
 import { Fragment } from "react";
 import styles from "./about.module.css";
 import YouTube from "react-youtube";
-
-
-import { useNavigate } from "react-router-dom";
 import Footer from "../../atom/footer/footer";
 
 export default function About() {
-  const navigate = useNavigate();
-  function handleSeeWholeTeam() {
-    navigate("/training");
-  }
+  //youtube video added
   const videoId = "KaBmao5e_54";
   const videoId2 = "2pLT-olgUJs";
   function playVideo() {
     console.log("video played");
   }
+
+  //notification logic
   function handleLearnMore() {
     alert("Clicked from About us section");
   }
@@ -23,13 +19,8 @@ export default function About() {
     <Fragment>
       <div className={styles.About}>
         <div className={styles.About_container}>
-          
-            <YouTube
-              videoId={videoId}
-              onReady={playVideo}
-              
-            />
-         
+          <YouTube videoId={videoId} onReady={playVideo} />
+
           <div className={styles.About_container2}>
             <h2>About us</h2>
             <p></p>
@@ -54,14 +45,9 @@ export default function About() {
                 number of machines.
               </p>
             </ul>
-            <button className={styles.btn} onClick={handleSeeWholeTeam}>
-              See whole team
-            </button>
           </div>
-          
-            <YouTube videoId={videoId2} onReady={playVideo} 
-            />
-          
+
+          <YouTube videoId={videoId2} onReady={playVideo} />
         </div>
       </div>
       <div className={styles.Footer}>
