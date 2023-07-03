@@ -2,10 +2,12 @@ import { Fragment } from "react";
 import styles from "./trainning.module.css";
 import Footer from "../../atom/footer/footer";
 import Icons from "../../atom/icons/icons";
+import Header from "../../atom/header/header";
 
 export default function Training() {
   return (
     <Fragment>
+      <Header />
       <div className={styles.head}>
         <h2>Meet our Team</h2>
       </div>

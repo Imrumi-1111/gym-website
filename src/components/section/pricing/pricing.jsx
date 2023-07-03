@@ -3,10 +3,12 @@ import styles from "./pricing.module.css";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Footer from "../../atom/footer/footer";
+import Header from "../../atom/header/header";
 
 export default function Pricing() {
   return (
     <Fragment>
+      <Header />
       <div className={styles.Fragment}>
         <div className={styles.Pricing_page1}>
           <h4>Day Pass</h4>

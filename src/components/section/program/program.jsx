@@ -3,6 +3,7 @@ import styles from "./program.module.css";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowLeft, MdOutlineArrowRight } from "react-icons/md";
 import Footer from "../../atom/footer/footer";
+import Header from "../../atom/header/header";
 
 export default function Program() {
   const [scroll, setScroll] = useState(0);
@@ -28,6 +29,7 @@ export default function Program() {
   }
   return (
     <Fragment>
+      <Header />
       <div className={styles.Classes}>
         <div className={styles.heading}>
           <h3>Training programs</h3>

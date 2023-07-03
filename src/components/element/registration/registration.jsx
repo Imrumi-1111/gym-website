@@ -22,25 +22,37 @@ export default function Registration() {
     <Fragment>
       <div className={styles.Registration}>
         <h2>Registration Page</h2>
-        <form onSubmit={handleRegistration}>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button type="submit">Submit</button>
-        </form>
+        <div className={styles.Registration2}>
+          <form onSubmit={handleRegistration}>
+            <div className={styles.input}>
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className={styles.input}
+              />
+            </div>
+            <div className={styles.input}>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className={styles.input}
+              />
+            </div>
+            <div className={styles.btn}>
+              <button type="submit" className={styles.btn}>
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
         {successMessage && (
           <div>
             <p>{successMessage}</p>
-            <div onClick={handleGoHome}>
+            <div onClick={handleGoHome} className={styles.text}>
               <p>
                 <b> Go to Strength camp</b>
               </p>

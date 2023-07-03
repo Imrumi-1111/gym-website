@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import styles from "./about.module.css";
 import YouTube from "react-youtube";
 import Footer from "../../atom/footer/footer";
+import Header from "../../atom/header/header";
 
 export default function About() {
   //youtube video added
@@ -17,6 +18,7 @@ export default function About() {
   }
   return (
     <Fragment>
+      <Header />
       <div className={styles.About}>
         <div className={styles.About_container}>
           <YouTube videoId={videoId} onReady={playVideo} />
