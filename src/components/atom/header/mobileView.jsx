@@ -1,50 +1,47 @@
-import { Fragment, useState } from "react";
-import styles from "./header.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { ImMenu } from "react-icons/im";
+import { useNavigate, Link } from 'react-router-dom'
+import styles from './mobileView.module.css'
 
-export default function Header() {
-  const [show, setShow] = useState(false);
+export default function Mobile({ closeFunction }) {
   const navigate = useNavigate();
-
-  function handleShowList() {
-    setShow(!show);
-  }
-
   function handleJoin() {
     navigate("/registration");
   }
-
   return (
-    <Fragment>
-      <div className={styles.Header}>
-        <div className={styles.MenuIcon} onClick={handleShowList}>
-          <div className={`${styles.MenuIconLine} ${show ? styles.Open : ""}`}></div>
-          <div className={`${styles.MenuIconLine} ${show ? styles.Open : ""}`}></div>
-          <div className={`${styles.MenuIconLine} ${show ? styles.Open : ""}`}></div>
-        </div>
-        <Link to="/" style={{ textDecoration: "none" }}>
+      <div className={styles.mobile}>
+        
+          <div className={styles.mobile_view}>
+          <Link to="/" style={{ textDecoration: "none" }}>
           <p>
             <b>Strength camp</b>
           </p>
+          
         </Link>
-        <div className={`${styles.Navbar} ${show ? styles.Show : ""}`}>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <p>About us</p>
-          </Link>
-          <Link to="/program" style={{ textDecoration: "none" }}>
-            <p>Program</p>
-          </Link>
-          <Link to="/training" style={{ textDecoration: "none" }}>
-            <p>Training</p>
-          </Link>
-          <Link to="/pricing" style={{ textDecoration: "none" }}>
-            <p>Pricing</p>
-          </Link>
-          <button className={styles.btn} onClick={handleJoin}>
-            Join us
-          </button>
+              <ImMenu
+                  className={styles.icon}
+                  onClick={closeFunction}
+              />
+          </div>
+          
+
+          <div className={styles.menuList}>
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <p>About us</p>
+        </Link>
+        <Link to="/program" style={{ textDecoration: "none" }}>
+          <p>Program</p>
+        </Link>
+        <Link to="/training" style={{ textDecoration: "none" }}>
+          <p>Training</p>
+        </Link>
+        <Link to="/pricing" style={{ textDecoration: "none" }}>
+          <p>Pricing</p>
+        </Link>
+        <button className={styles.btn} onClick={handleJoin}>
+          Join us
+        </button>
         </div>
+
       </div>
-    </Fragment>
-  );
+  )
 }

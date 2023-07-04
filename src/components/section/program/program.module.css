@@ -51,6 +51,9 @@
 .btn:hover {
   opacity: 1;
 }
+.Head{
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .Classes {
     display: flex;

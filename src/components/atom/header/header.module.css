@@ -32,40 +32,19 @@ p {
   display: flex;
   gap: 4rem;
 }
-
+.Header p{
+  background-color: #030244;
+  border-radius: 8px;
+  opacity: 0.6;
+  padding: 0.21rem 0.21rem;
+}
+.Header p:hover{
+  opacity: 1;
+}
 
 @media only screen and (max-width: 600px) {
   .Header {
-    border: 0.1rem solid #a03b54;
-    display: flex;
-    background-color: #030244;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    color: aliceblue;
+    display: none;
   }
-  .menuList{
-    display: flex;
-    flex-direction: column;
-  }
-  .btn {
-    margin: 1rem 1rem;
-    width: 5rem;
-    background-color: green;
-    height: fit-content;
-    opacity: 0.6;
-    font-size: medium;
-    border-radius: 8px;
-  }
-  .btn:hover {
-    opacity: 1;
-  }
-  p {
-    color: #a03b54;
   
-  }
-  .BiMenu{
-    display: flex;
-  }
 }

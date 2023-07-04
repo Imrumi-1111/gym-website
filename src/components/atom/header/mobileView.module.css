@@ -1,0 +1,67 @@
+.mobile {
+  display: none;
+}
+.icon {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.header {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .mobile {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .mobile_view {
+    display: flex;
+    gap: 1rem;
+  }
+  .icon {
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  .icon:hover{
+    opacity: 1;
+  }
+  .menu {
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+  }
+  .btn {
+    margin: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 6.23rem;
+    background-color: green;
+    height: fit-content;
+    opacity: 0.6;
+    font-size: medium;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  .mobile p{
+    background-color: #000000;
+  border-radius: 8px;
+  opacity: 0.6;
+  padding: 0.21rem 0.21rem;
+  }
+  .mobile p:hover{
+    opacity: 1;
+  }
+}

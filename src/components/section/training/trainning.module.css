@@ -39,6 +39,9 @@
   text-align: center;
   padding: 0.2rem 1rem;
 }
+.Head{
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .Training {
@@ -72,5 +75,8 @@
     align-items: center;
     text-align: center;
     padding: 0.2rem 1rem;
+  }
+  .Heade1{
+    display: none;
   }
 }

@@ -3,6 +3,7 @@ import styles from "./about.module.css";
 import YouTube from "react-youtube";
 import Footer from "../../atom/footer/footer";
 import Header from "../../atom/header/header";
+import Head from "../../atom/header/mobileList";
 
 export default function About() {
   //youtube video added
@@ -18,14 +19,15 @@ export default function About() {
   }
   return (
     <Fragment>
-      <Header />
+      <Header className={styles.Header}/>
+      <Head className={styles.Head}/>
       <div className={styles.About}>
         <div className={styles.About_container}>
           <YouTube videoId={videoId} onReady={playVideo} />
 
           <div className={styles.About_container2}>
             <h2>About us</h2>
-            <p></p>
+            <p>We are Strength camp. Transform your lifestyle with us and acquire fitness.</p>
             <button className={styles.btn} onClick={handleLearnMore}>
               Learn More
             </button>
@@ -35,7 +37,7 @@ export default function About() {
           <div className={styles.About_container4}>
             <h2>Why choose us?</h2>
             <ul>
-              <li>Consultation with Expert</li>
+              <li>Consult with Expert</li>
               <p>
                 Make your workouts work harder. From setting goals to
                 customizing your workouts, our trainers draw on proven

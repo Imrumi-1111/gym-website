@@ -1,13 +1,10 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import styles from "./header.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import { BiMenu } from 'react-icons/bi'
+// import { BiMenu } from 'react-icons/bi'
 
 export default function Header() {
-  const [show, setShow] = useState(false);
-  function handleShowList() {
-    setShow(!show);
-  }
+  
   //navigating to registration page logic
   const navigate = useNavigate();
   function handleJoin() {
@@ -15,14 +12,14 @@ export default function Header() {
   }
   return (
     <Fragment>
-      <div className={styles.Header} onClick={handleShowList}>
+      <div className={styles.Header} >
         <Link to="/" style={{ textDecoration: "none" }}>
           <p>
             <b>Strength camp</b>
           </p>
-          <div className={styles.BiMenu} onClick={handleShowList}>{<BiMenu/>}</div>
+          
         </Link>
-        {show && (
+       
         <div className={styles.menuList}>
         <Link to="/about" style={{ textDecoration: "none" }}>
           <p>About us</p>
@@ -40,7 +37,7 @@ export default function Header() {
           Join us
         </button>
         </div>
-        )}
+        
       </div>
     </Fragment>
   );

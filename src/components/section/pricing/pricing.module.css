@@ -36,6 +36,10 @@
   width: 11rem;
   padding: 0.2rem 0.2rem;
   background-color: rgb(160, 119, 31);
+  cursor: pointer;
+}
+.Head{
+  display: none;
 }
 @media only screen and (max-width: 600px) {
   .Fragment {
@@ -77,5 +81,6 @@
     width: 11rem;
     padding: 0.2rem 0.2rem;
     background-color: rgb(160, 119, 31);
+    cursor: pointer;
   }
 }

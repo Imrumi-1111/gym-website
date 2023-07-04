@@ -8,6 +8,21 @@
   display: flex;
   gap: 5rem;
 }
+.btn{
+  margin: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 6.23rem;
+  background-color:  green;
+  height: fit-content;
+  opacity: 0.6;
+  font-size: medium;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 1;
+}
 .About_container2 {
   display: flex;
   flex-direction: column;
@@ -22,6 +37,9 @@
 .About_container4 {
   display: flex;
   flex-direction: column;
+}
+.Head{
+  display: none;
 }
 @media only screen and (max-width: 600px) {
   .About {
@@ -46,11 +64,25 @@
     flex-direction: column;
     margin: 2rem 2rem;
     display: flex;
-
     gap: 5rem;
   }
   .About_container4 {
     display: flex;
     flex-direction: column;
+  }
+  .btn{
+    margin: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 6.23rem;
+    background-color:  green;
+    height: fit-content;
+    opacity: 0.6;
+    font-size: medium;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    opacity: 1;
   }
 }

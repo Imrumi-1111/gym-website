@@ -3,11 +3,13 @@ import styles from "./trainning.module.css";
 import Footer from "../../atom/footer/footer";
 import Icons from "../../atom/icons/icons";
 import Header from "../../atom/header/header";
+import Head from "../../atom/header/mobileList";
 
 export default function Training() {
   return (
     <Fragment>
-      <Header />
+      <div className={styles.Header1}><Header /></div>
+      <Head className={styles.Head}/>
       <div className={styles.head}>
         <h2>Meet our Team</h2>
       </div>
