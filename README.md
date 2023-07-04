@@ -1,10 +1,10 @@
 # GYM Website
 # by Upasana Chakraborty
-# Deploy link : https://gym-website-beryl.vercel.app/
+# Deploy link : https://gym-website-tymh.vercel.app/
 # Library used : React Js
-# Language : JavaScript
+# Language : JavaScript XML (JSX)
 # Npm used :  Build this project using Reactjs, Router-dom,MUI,React youtube,React wavify library.
-
+# It is a gym website where user can register themselves and can get overall idea of the organisation.
 
 # Getting Started with Create React App
 
